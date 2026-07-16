@@ -1,6 +1,10 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
 import axios from 'axios';
 
+// Configure Axios
+axios.defaults.baseURL =
+  import.meta.env.VITE_API_URL || (import.meta.env.DEV ? 'http://127.0.0.1:5000' : '');
+
 // Set up default axios configurations for proxying and credential sending
 axios.defaults.withCredentials = true;
 

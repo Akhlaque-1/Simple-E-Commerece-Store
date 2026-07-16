@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://simple-e-commerece-store-ahdk.vercel.app/api/:path*"
+    }
+  ]
+}
